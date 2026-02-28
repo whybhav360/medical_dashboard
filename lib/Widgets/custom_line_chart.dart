@@ -195,6 +195,7 @@ class _CustomLineChartState extends State<CustomLineChart> {
                       axisNameSize: 20,
                     ),
                     bottomTitles: AxisTitles(
+                      axisNameSize: 30,
                       sideTitles: SideTitles(
                         showTitles: true,
                         interval: 1,
