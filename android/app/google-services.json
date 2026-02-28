@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "52653760395",
+    "project_id": "medical-dashboard-4cf61",
+    "storage_bucket": "medical-dashboard-4cf61.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52653760395:android:0e96afbb67de529fb3d98e",
+        "android_client_info": {
+          "package_name": "com.example.medical_dashboard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvwnFNlKfRb8yURCisxp2bFBU5p1lV9KA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
