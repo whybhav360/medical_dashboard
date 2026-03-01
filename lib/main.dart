@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       home: FirebaseAuth.instance.currentUser != null
           ? const BottomNavigation()
-          : Signin(),
+          : const Signin(),
     );
   }
 }
