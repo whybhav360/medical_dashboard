@@ -67,6 +67,3 @@ One of the standout features is the **Automated PDF Engine**:
    ```bash
    flutter run
    ```
-​
----
-*Developed with a focus on scalability and clinical accuracy.*
