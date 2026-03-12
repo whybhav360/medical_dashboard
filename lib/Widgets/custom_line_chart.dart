@@ -12,7 +12,6 @@ class CustomLineChart extends StatefulWidget {
 
 class _CustomLineChartState extends State<CustomLineChart> {
   /// Fetches user data from Firestore using the `docId` defined in `secrets.dart`.
-  ///
   /// Returns a map of the document data if successful, otherwise null.
   Future<Map<String, dynamic>?> fetchUserData() async {
     try {
@@ -144,7 +143,7 @@ class _CustomLineChartState extends State<CustomLineChart> {
                     bottomTitles: AxisTitles(
                         sideTitles: SideTitles(
                             showTitles: true,
-                            interval: 200, // Matching 0, 200, 400...
+                            interval: 200,
                             getTitlesWidget: (value, meta) => Text(
                                 value.toInt().toString(),
                                 style: const TextStyle(
