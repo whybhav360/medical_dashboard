@@ -1,3 +1,4 @@
+import 'package:awesome_snackbar_content/awesome_snackbar_content.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -30,11 +31,28 @@ class _SigninState extends State<Signin> {
         email: emailController.text.trim(),
         password: passwordController.text.trim(),
       );
+      final materialBanner = MaterialBanner(
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+        forceActionsBelow: true,
+        content: AwesomeSnackbarContent(
+          title: 'Welcome Back!',
+          message:
+              'Close the window by pressing the x on top right to continue using the app normally',
+          contentType: ContentType.success,
+          inMaterialBanner: true,
+        ),
+        actions: const [SizedBox.shrink()],
+      );
+      ScaffoldMessenger.of(context)
+        ..hideCurrentMaterialBanner()
+        ..showMaterialBanner(materialBanner);
       const snackBar = SnackBar(content: Text("Signin Successful"));
       ScaffoldMessenger.of(context).showSnackBar(snackBar);
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (BuildContext context) => const BottomNavigation()),
+        MaterialPageRoute(
+            builder: (BuildContext context) => const BottomNavigation()),
       );
     } on FirebaseAuthException catch (e) {
       final snackBar = SnackBar(content: Text(e.message!));
